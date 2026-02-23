@@ -397,6 +397,11 @@
 <!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" style="margin-bottom:1rem;">
+    <span class="toggle-icon-moon">🌙</span>
+    <div class="toggle-track"><div class="toggle-thumb"></div></div>
+    <span class="toggle-icon-sun">☀️</span>
+  </button>
   <a href="#about" onclick="closeMobileNav()">About</a>
   <a href="#skills" onclick="closeMobileNav()">Methods</a>
   <a href="#education" onclick="closeMobileNav()">Education</a>
@@ -421,13 +426,8 @@
       </button>
     </li>
   </ul>
-  <!-- Mobile row: theme toggle + hamburger -->
-  <div style="display:flex;align-items:center;gap:0.75rem;">
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" id="mobileThemeBtn">
-      <span class="toggle-icon-moon">🌙</span>
-      <div class="toggle-track"><div class="toggle-thumb"></div></div>
-      <span class="toggle-icon-sun">☀️</span>
-    </button>
+  <!-- Mobile row: hamburger only -->
+  <div style="display:flex;align-items:center;">
     <button class="hamburger" onclick="openMobileNav()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
